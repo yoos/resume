@@ -1,0 +1,224 @@
+\documentclass[10pt,letterpaper,margin]{res}
+% the margin option causes section titles to appear to the left of body text
+\textwidth=5.5in % increase textwidth to get smaller right margin
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage{palatino}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\fancyhead[L]{\emph{}}
+\fancyhead[C]{\emph{}}
+\fancyhead[R]{\emph{}}
+\fancyfoot{}
+\fancyfoot[C]{}
+\pagestyle{fancy}
+
+\hypersetup{colorlinks,
+  linkcolor = black,
+  citecolor = black,
+  urlcolor  = black}
+\urlstyle{same}
+
+\renewcommand{\labelitemi}{}
+
+\definecolor{lightgray}{gray}{0.5}
+
+\newcommand{\cinfodiv}{{\color{lightgray} \hspace{1pt} -- \hspace{3pt}}}
+
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\huge\bf Soo-Hyun Yoo}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+ \moveleft.5\hoffset\centerline{2201 NW Maser Drive, Corvallis, OR 97330}
+ \moveleft.5\hoffset\centerline{yoos@onid.orst.edu \cinfodiv iterativecode.com \cinfodiv github.com/yoos \cinfodiv 740-343-9667}
+
+\begin{resume}
+
+% \section{\large\itshape Objective}
+% 
+% To make awesome things (usually robots).
+
+
+
+\section{\large\itshape Education}
+
+Studying Computer Science at Oregon State University, Corvallis, OR (3.28 GPA)
+
+
+
+\section{\large\itshape Work \\ Experience}
+
+{\bf OSU Dynamic Robotics Laboratory} \hfill {\color{lightgray} Corvallis, OR} \\
+{\it Programmer} \hfill {\color{lightgray} Sep. 2011 -- Present}\vspace{0.2em}
+
+\begin{itemize}
+	\item Build software system using ROS, Orocos, and Xenomai to run modular,
+		hard real-time 1 kHz controllers on ATRIAS 2.1, an EtherCAT-enabled
+		bipedal robot.
+\end{itemize}
+
+{\it Programming Intern} \hfill {\color{lightgray} Jun. 2010 -- Aug. 2010}\vspace{0.2em}
+
+\begin{itemize}
+	\item Developed graphical user interface in C++ and GTK+ for ATRIAS 1.0,
+		a monopod.
+	% \item Develop a graphical user interface using C++ and GTK+ for ATRIAS 1.0
+	% 	(a monopod hopping robot), explore ROS, and use Blender and Panda3D for
+	% 	3D modeling and visualization of the robot.
+\end{itemize}
+
+
+{\bf The Corvallis Clinic} \hfill {\color{lightgray} Corvallis, OR} \\
+{\it Data Analyst} \hfill {\color{lightgray} Jun. 2011 -- Aug. 2011}\vspace{0.2em}
+
+\begin{itemize}
+	\item Analyzed energy savings achieved by the ERS and HVAC/lighting
+		upgrades.
+		% ERS: Electronic Records System
+\end{itemize}
+
+
+
+\section{\large\itshape Clubs \& \\ Activities}
+
+{\bf OSU Autonomous Aerial Robotics Team} \hfill {\color{lightgray} Corvallis, OR} \\
+{\it Team Lead} \hfill {\color{lightgray} Sep. 2012 -- Present}\vspace{0.2em}
+
+\begin{itemize}
+	\item Coordinate technical developments and public outreach efforts.
+\end{itemize}
+
+{\it Programmer} \hfill {\color{lightgray} Sep. 2011 -- Present}\vspace{0.2em}
+
+\begin{itemize}
+	\item Develop software for embedded flight control, object recognition, and
+		autonomous indoor navigation with 3D simultaneous localization and
+		mapping.
+	% \item Develop embedded flight control software and explore computer vision,
+	% 	machine learning, and various topics related to autonomous robotic
+	% 	systems towards competing in the International Aerial Robotics
+	% 	Competition.
+\end{itemize}
+
+
+% {\bf OSU Robotics Club} \hfill {\color{lightgray} Corvallis, OR} \\
+% {\it Treasurer} \hfill {\color{lightgray} Sep. 2012 -- Present}\vspace{0.2em}
+% 
+% \begin{itemize}
+% 	\item Manage club finances and help with various other club functions.
+% \end{itemize}
+
+
+{\bf OSU Underwater ROV Team} \hfill {\color{lightgray} Corvallis, OR} \\
+{\it Programmer} \hfill {\color{lightgray} Sep. 2011 -- Present}\vspace{0.2em}
+
+\begin{itemize}
+	\item Develop control software for underwater ROV.
+\end{itemize}
+
+
+{\bf FIRST Robotics Team 955} \hfill {\color{lightgray} Corvallis, OR} \\
+{\it Co-Program Manager} \hfill {\color{lightgray} Nov. 2010 -- May 2011}\vspace{0.2em}
+
+\begin{itemize}
+	\item Managed technical operations of high school robotics team.
+	% \item Manage the FIRST Robotics program (involving 45 students and 10 adult
+	% 	mentors) at Crescent Valley High School, with focus on technical
+	% 	operations of the team.
+\end{itemize}
+
+
+
+\section{\large\itshape Personal \\ Projects}
+
+{\bf Tricopter} \hfill {\color{lightgray} Jan. 2011 -- Present}\vspace{0.2em}
+
+\begin{itemize}
+	\item Three-rotor aerial robot with self-built hardware and software.
+	% \item Three-bladed multirotor with self-built hardware and software started
+	% 	as a garage project that now contributes to flight control studies for
+	% 	the OSU Aerial Robotics Team.
+\end{itemize}
+
+{\footnotesize (More personal projects can be found on my website and Github page.)}
+
+
+
+\section{\large\itshape Skills}
+
+{\bf Languages}\vspace{0.2em}
+
+\begin{itemize}
+\item C, C++, Python, Common Lisp,
+	  HTML, CSS, Bash, \LaTeX
+\end{itemize}
+
+{\bf Tools \& Architectures}\vspace{0.2em}
+
+\begin{itemize}
+\item ROS, Orocos, Xenomai,
+	  Git, Subversion,
+	  AVR and ARM microprocessors,
+	  Linux (Arch, Ubuntu), Mac OS, Windows
+\end{itemize}
+
+{\bf Mechanical \& Electrical}\vspace{0.2em}
+
+\begin{itemize}
+\item SolidWorks, MIG/arc welding, machine tools,
+	  Eagle PCB, hand-soldering 0402's
+\end{itemize}
+
+
+
+\section{\large\itshape References}
+
+Available upon request.
+
+\end{resume}
+
+
+
+% \newpage
+% \section{\large\itshape References}
+% 
+% {\bf Jonathan W. Hurst} \vspace{0.5em}\\
+% Assistant Professor of Mechanical Engineering \\
+% School of Mechanical, Industrial, and Manufacturing Engineering \\
+% Oregon State University \vspace{0.5em}\\
+% 218A Dearborn Hall \\
+% Corvallis, OR 97331-6001 \vspace{0.5em}\\
+% jonathan.hurst@oregonstate.edu \\
+% 541-737-7010 \\
+% 
+% {\bf Cody Hyman} \vspace{0.5em}\\
+% OSU Robotics Club President (2010 -- 2012) \vspace{0.5em}\\
+% 770 NW 11th Street \\
+% Corvallis, OR, 97330 \vspace{0.5em}\\
+% hymanc@onid.orst.edu \\
+% 541-350-3883\\
+% 
+% {\bf Will Rottenkolber} \vspace{0.5em}\\
+% Crescent Valley High School Robotics Team Coach \vspace{0.5em}\\
+% 4444 NW Highland Drive \\
+% Corvallis, OR 97330 \vspace{0.5em}\\
+% will.rottenkolber@gmail.com \\
+% 541-231-2536 \\
+% 
+% {\bf Charles Creighton} \vspace{0.5em}\\
+% Corvallis Youth Symphony Music Director \vspace{0.5em}\\
+% P.O. Box 857 \\
+% Corvallis, OR 97330 \vspace{0.5em}\\
+% creighc@comcast.net \\
+
+\end{document}
+
