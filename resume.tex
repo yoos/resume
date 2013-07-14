@@ -1,6 +1,6 @@
 \documentclass[10pt,letterpaper,margin]{res}
 % the margin option causes section titles to appear to the left of body text
-\textwidth=5.5in % increase textwidth to get smaller right margin
+\textwidth=6.5in % increase textwidth to get smaller right margin
 \usepackage{fancyhdr}
 \usepackage[utf8]{inputenc}
 \usepackage{palatino}
@@ -39,53 +39,56 @@
 % address begins here
 % Again, the address lines must be centered over entire width of resume:
  \moveleft.5\hoffset\centerline{2201 NW Maser Drive, Corvallis, OR 97330}
- \moveleft.5\hoffset\centerline{yoos@onid.orst.edu \cinfodiv iterativecode.com \cinfodiv github.com/yoos \cinfodiv 740-343-9667}
+
+% TODO: This is a hack to make my contact info look a bit more organized.
+ \vspace{-1.2em}
+ \moveleft.5\hoffset\centerline{yoos@onid.orst.edu \hfill iterativecode.com}
+ \moveleft.5\hoffset\centerline{740-343-9667 \hfill github.com/yoos }
+
+ \vspace{-0.15in}
+
 
 \begin{resume}
 
-% \section{\large\itshape Objective}
-% 
-% To make awesome things (usually robots).
+
+\section{Objective}
+
+To make awesome things (usually robots).
 
 
 
-\section{\large\itshape Education}
+\section{Education}
 
 Studying Computer Science at Oregon State University, Corvallis, OR (3.25 GPA)
 
 
 % Skills section near top to impress HR people.
-\section{\large\itshape Skills}
+\section{Skills}
 
 {\bf Languages}\vspace{0.2em}
 
 \begin{itemize}
-	\setlength{\itemindent}{3em}
-	\item[Skilled:] C, C++, Python, Bash, \LaTeX
-	\item[Basic:] Common Lisp, Haskell, Java, HTML, CSS, Javascript
+	\item C, C++, Python, Bash, \LaTeX
 \end{itemize}
 
 {\bf Software Tools \& Architectures}\vspace{0.2em}
 
 \begin{itemize}
-	\setlength{\itemindent}{3em}
-	\item[Expert:] Git, Robot Operating System (ROS), Linux (Arch, Ubuntu)
-	\item[Skilled:] Open Robot Control System (Orocos), Xenomai, AVR and ARM
-		microprocessors, ChibiOS embedded RTOS
-	\item[Basic:] Subversion, Mercurial, Mac OS, Windows
+	\item Git, Subversion, Mercurial
+	\item Linux (Arch, Ubuntu), AVR and ARM microprocessors, ChibiOS embedded RTOS
+	\item Robot Operating System (ROS), Open Robot Control System (Orocos)
 \end{itemize}
 
 {\bf Mechanical \& Electrical}\vspace{0.2em}
 
 \begin{itemize}
-	\setlength{\itemindent}{3em}
-	\item[Expert:] Hand-soldering anything from 0402's to 6 AWG wire
-	\item[Skilled:] SolidWorks, MIG/arc welding, machine tools, Eagle PCB
+	\item Hand-soldering anything from 0402 SMDs to 0 gauge wire, Eagle PCB, PCB etching
+	\item SolidWorks, MIG and arc welding, machine tools, aluminum anodization
 \end{itemize}
 
 
 
-\section{\large\itshape Work \\ Experience}
+\section{Work \\ Experience}
 
 % TODO: Get more meaningful experience before including this.
 % {\bf OSU Open Source Laboratory} \hfill {\color{lightgray} Corvallis, OR} \\
@@ -101,21 +104,19 @@ Studying Computer Science at Oregon State University, Corvallis, OR (3.25 GPA)
 \begin{itemize}
 	\item Build a software system for ATRIAS, a bipedal robot, that is capable
 		of simultaneously running multiple modular, hard real-time 1 kHz
-		controllers, communicating with a graphical user interface via
-		a wireless link, communicating with six embedded controllers via
-		EtherCAT, and reliably logging the full 1 kHz of data (approximately 10
-		MB/s) within Ubuntu Linux running on a mini-PC onboard the robot.
-	\item Work within a team of three other undergraduates to create controller
-		templates, allowing researchers to write controllers for ATRIAS knowing
-		only basic C++ syntax without the need to understand the entire
-		software stack.
+		controllers, wirelessly communicating with a graphical user interface,
+		controlling six embedded EtherCAT slave devices, and reliably logging
+		the full 1 kHz of data (approximately 10 MB/s) within Ubuntu Linux
+		running on a mini-PC onboard the robot.
+	\item Work within a team of four to create controller templates, allowing
+		researchers to write controllers for ATRIAS knowing only basic C++
+		syntax without the need to understand the entire software stack.
 	\item Run benchtop tests on commercial motor driver used by ATRIAS to
-		reverse engineer the proprietary current limiting algorithm in order to
-		determine overall performance cap of robot.
-	\item Write Bash and Python scripts to automatically synchronize data log
-		files between robot and GUI computers, convert log files to MATLAB
-		format, and deploy entire control system with a single command from the
-		GUI computer.
+		reverse engineer the proprietary current limiting algorithm and
+		determine the robot's overall performance cap.
+	\item Write Bash and Python scripts to automatically synchronize log files
+		between robot and GUI computers, convert log files to MATLAB format,
+		and deploy entire software system with a single command.
 	\item Help develop a robot simulator using Gazebo that can be controlled
 		instead of the actual robot, used for troubleshooting potentially
 		destructive bugs in new controllers before running them on hardware.
@@ -131,13 +132,13 @@ Studying Computer Science at Oregon State University, Corvallis, OR (3.25 GPA)
 	\item Developed graphical user interface in C++ and GTK+ for ATRIAS 1.0,
 		a monopod.
 	\item Developed a 3D simulation visualizer of the robot using Blender and
-		Panda3D to be used in testing hopping controllers before ATRIAS 1.0 was
+		Panda3D to be used to test hopping controllers before ATRIAS 1.0 was
 		physically built.
 \end{itemize}
 
 
 
-\section{\large\itshape Clubs \& \\ Activities}
+\section{Clubs \& \\ Activities}
 
 {\bf OSU Autonomous Aerial Robotics Team} \hfill {\color{lightgray} Corvallis, OR} \\
 {\it Team Lead} \hfill {\color{lightgray} Sep. 2012 -- Present}\vspace{0.2em}
@@ -150,14 +151,13 @@ Studying Computer Science at Oregon State University, Corvallis, OR (3.25 GPA)
 
 \begin{itemize}
 	\item Develop software for embedded flight control, object recognition, and
-		autonomous indoor navigation with 3D simultaneous localization and
-		mapping towards competing in the International Aerial Robotics
-		Competition.
+		autonomous indoor navigation with 3D localization and mapping towards
+		competing in the International Aerial Robotics Competition.
 \end{itemize}
 
 
 
-\section{\large\itshape Personal \\ Projects}
+\section{Personal \\ Projects}
 
 {\bf Tricopter} \hfill {\color{lightgray} Jan. 2011 -- August 2012}\vspace{0.2em}
 
@@ -165,15 +165,15 @@ Studying Computer Science at Oregon State University, Corvallis, OR (3.25 GPA)
 	\item Three-bladed multirotor with garage-built hardware and software.
 		Served as introduction to AVR microcontrollers, power electronics,
 		cascading PID control, ROS, and SolidWorks.
-	\item DIY PCB etching with cupric chloride
-	\item DIY aluminum anodization
+% 	\item DIY PCB etching with cupric chloride
+% 	\item DIY aluminum anodization
 \end{itemize}
 
-{\footnotesize (Please find more personal projects on my website and Github page.)}
+{\footnotesize (Please find more personal projects on my website, iterativecode.com, and Github page.)}
 
 
 
-\section{\large\itshape References}
+\section{References}
 
 Available upon request.
 
@@ -182,7 +182,7 @@ Available upon request.
 
 
 % \newpage
-% \section{\large\itshape References}
+% \section{References}
 % 
 % {\bf Jonathan W. Hurst} \vspace{0.5em}\\
 % Assistant Professor of Mechanical Engineering \\
