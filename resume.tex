@@ -69,9 +69,9 @@ Studying Computer Science at Oregon State University, Corvallis, OR (3.25 GPA)
 
 \begin{itemize}
 	\setlength{\itemindent}{3em}
-	\item[Expert:] Git, ROS, Linux (Arch, Ubuntu)
-	\item[Skilled:] Orocos, Xenomai, AVR and ARM microprocessors, ChibiOS
-		embedded RTOS
+	\item[Expert:] Git, Robot Operating System (ROS), Linux (Arch, Ubuntu)
+	\item[Skilled:] Open Robot Control System (Orocos), Xenomai, AVR and ARM
+		microprocessors, ChibiOS embedded RTOS
 	\item[Basic:] Subversion, Mercurial, Mac OS, Windows
 \end{itemize}
 
@@ -99,13 +99,30 @@ Studying Computer Science at Oregon State University, Corvallis, OR (3.25 GPA)
 {\it Programmer} \hfill {\color{lightgray} Sep. 2011 -- Present}\vspace{0.2em}
 
 \begin{itemize}
-	\item Build software system using ROS, Orocos, and Xenomai to run modular,
-		hard real-time 1 kHz controllers on ATRIAS 2.1, an EtherCAT-enabled
-		bipedal robot.
-	\item Help maintain firmware for the Medulla, the lab's in-house EtherCAT
-		slave device that bridges the real-time controllers with sensors and
-		actuators on ATRIAS.
-	\item Research IMUs and integrate the KVH 1750 IMU into Medulla firmware.
+	\item Build a software system for ATRIAS, a bipedal robot, that is capable
+		of simultaneously running multiple modular, hard real-time 1 kHz
+		controllers, communicating with a graphical user interface via
+		a wireless link, communicating with six embedded controllers via
+		EtherCAT, and reliably logging the full 1 kHz of data (approximately 10
+		MB/s) within Ubuntu Linux running on a mini-PC onboard the robot.
+	\item Work within a team of three other undergraduates to create controller
+		templates, allowing researchers to write controllers for ATRIAS knowing
+		only basic C++ syntax without the need to understand the entire
+		software stack.
+	\item Run benchtop tests on commercial motor driver used by ATRIAS to
+		reverse engineer the proprietary current limiting algorithm in order to
+		determine overall performance cap of robot.
+	\item Write Bash and Python scripts to automatically synchronize data log
+		files between robot and GUI computers, convert log files to MATLAB
+		format, and deploy entire control system with a single command from the
+		GUI computer.
+	\item Help develop a robot simulator using Gazebo that can be controlled
+		instead of the actual robot, used for troubleshooting potentially
+		destructive bugs in new controllers before running them on hardware.
+	\item Research high-performance IMUs for use in 3D walking. Work with
+		researchers at University of Michigan to integrate the KVH 1750 IMU
+		into ATRIAS's embedded controller firmware.
+	\item Help repair and assemble robot hardware and electronics.
 \end{itemize}
 
 {\it Programming Intern} \hfill {\color{lightgray} Jun. 2010 -- Aug. 2010}\vspace{0.2em}
@@ -114,7 +131,8 @@ Studying Computer Science at Oregon State University, Corvallis, OR (3.25 GPA)
 	\item Developed graphical user interface in C++ and GTK+ for ATRIAS 1.0,
 		a monopod.
 	\item Developed a 3D simulation visualizer of the robot using Blender and
-		Panda3D.
+		Panda3D to be used in testing hopping controllers before ATRIAS 1.0 was
+		physically built.
 \end{itemize}
 
 
@@ -147,6 +165,8 @@ Studying Computer Science at Oregon State University, Corvallis, OR (3.25 GPA)
 	\item Three-bladed multirotor with garage-built hardware and software.
 		Served as introduction to AVR microcontrollers, power electronics,
 		cascading PID control, ROS, and SolidWorks.
+	\item DIY PCB etching with cupric chloride
+	\item DIY aluminum anodization
 \end{itemize}
 
 {\footnotesize (Please find more personal projects on my website and Github page.)}
