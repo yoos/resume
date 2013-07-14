@@ -23,7 +23,7 @@
   urlcolor  = black}
 \urlstyle{same}
 
-\renewcommand{\labelitemi}{}
+%\renewcommand{\labelitemi}{}
 
 \definecolor{lightgray}{gray}{0.5}
 
@@ -51,11 +51,18 @@
 
 \section{\large\itshape Education}
 
-Studying Computer Science at Oregon State University, Corvallis, OR (3.28 GPA)
-
+Studying Computer Science at Oregon State University, Corvallis, OR (3.25 GPA)
 
 
 \section{\large\itshape Work \\ Experience}
+
+% TODO: Get more meaningful experience before including this.
+% {\bf OSU Open Source Laboratory} \hfill {\color{lightgray} Corvallis, OR} \\
+% {\it Student Developer} \hfill {\color{lightgray} Feb. 2013 -- Present}\vspace{0.2em}
+% 
+% \begin{itemize}
+% \end{itemize}
+
 
 {\bf OSU Dynamic Robotics Laboratory} \hfill {\color{lightgray} Corvallis, OR} \\
 {\it Programmer} \hfill {\color{lightgray} Sep. 2011 -- Present}\vspace{0.2em}
@@ -64,6 +71,10 @@ Studying Computer Science at Oregon State University, Corvallis, OR (3.28 GPA)
 	\item Build software system using ROS, Orocos, and Xenomai to run modular,
 		hard real-time 1 kHz controllers on ATRIAS 2.1, an EtherCAT-enabled
 		bipedal robot.
+	\item Help maintain firmware for the Medulla, the lab's in-house EtherCAT
+		slave device that bridges the real-time controllers with sensors and
+		actuators on ATRIAS.
+	\item Research IMUs and integrate the KVH 1750 IMU into Medulla firmware.
 \end{itemize}
 
 {\it Programming Intern} \hfill {\color{lightgray} Jun. 2010 -- Aug. 2010}\vspace{0.2em}
@@ -71,19 +82,8 @@ Studying Computer Science at Oregon State University, Corvallis, OR (3.28 GPA)
 \begin{itemize}
 	\item Developed graphical user interface in C++ and GTK+ for ATRIAS 1.0,
 		a monopod.
-	% \item Develop a graphical user interface using C++ and GTK+ for ATRIAS 1.0
-	% 	(a monopod hopping robot), explore ROS, and use Blender and Panda3D for
-	% 	3D modeling and visualization of the robot.
-\end{itemize}
-
-
-{\bf The Corvallis Clinic} \hfill {\color{lightgray} Corvallis, OR} \\
-{\it Data Analyst} \hfill {\color{lightgray} Jun. 2011 -- Aug. 2011}\vspace{0.2em}
-
-\begin{itemize}
-	\item Analyzed energy savings achieved by the ERS and HVAC/lighting
-		upgrades.
-		% ERS: Electronic Records System
+	\item Developed a 3D simulation visualizer of the robot using Blender and
+		Panda3D.
 \end{itemize}
 
 
@@ -102,80 +102,52 @@ Studying Computer Science at Oregon State University, Corvallis, OR (3.28 GPA)
 \begin{itemize}
 	\item Develop software for embedded flight control, object recognition, and
 		autonomous indoor navigation with 3D simultaneous localization and
-		mapping.
-	% \item Develop embedded flight control software and explore computer vision,
-	% 	machine learning, and various topics related to autonomous robotic
-	% 	systems towards competing in the International Aerial Robotics
-	% 	Competition.
-\end{itemize}
-
-
-% {\bf OSU Robotics Club} \hfill {\color{lightgray} Corvallis, OR} \\
-% {\it Treasurer} \hfill {\color{lightgray} Sep. 2012 -- Present}\vspace{0.2em}
-% 
-% \begin{itemize}
-% 	\item Manage club finances and help with various other club functions.
-% \end{itemize}
-
-
-{\bf OSU Underwater ROV Team} \hfill {\color{lightgray} Corvallis, OR} \\
-{\it Programmer} \hfill {\color{lightgray} Sep. 2011 -- Present}\vspace{0.2em}
-
-\begin{itemize}
-	\item Develop control software for underwater ROV.
-\end{itemize}
-
-
-{\bf FIRST Robotics Team 955} \hfill {\color{lightgray} Corvallis, OR} \\
-{\it Co-Program Manager} \hfill {\color{lightgray} Nov. 2010 -- May 2011}\vspace{0.2em}
-
-\begin{itemize}
-	\item Managed technical operations of high school robotics team.
-	% \item Manage the FIRST Robotics program (involving 45 students and 10 adult
-	% 	mentors) at Crescent Valley High School, with focus on technical
-	% 	operations of the team.
+		mapping towards competing in the International Aerial Robotics
+		Competition.
 \end{itemize}
 
 
 
 \section{\large\itshape Personal \\ Projects}
 
-{\bf Tricopter} \hfill {\color{lightgray} Jan. 2011 -- Present}\vspace{0.2em}
+{\bf Tricopter} \hfill {\color{lightgray} Jan. 2011 -- August 2012}\vspace{0.2em}
 
 \begin{itemize}
-	\item Three-rotor aerial robot with self-built hardware and software.
-	% \item Three-bladed multirotor with self-built hardware and software started
-	% 	as a garage project that now contributes to flight control studies for
-	% 	the OSU Aerial Robotics Team.
+	\item Three-bladed multirotor with garage-built hardware and software.
+		Served as introduction to AVR microcontrollers, power electronics,
+		cascading PID control, ROS, and SolidWorks.
 \end{itemize}
 
-{\footnotesize (More personal projects can be found on my website and Github page.)}
+{\footnotesize (Please find more personal projects on my website and Github page.)}
 
 
 
 \section{\large\itshape Skills}
 
+{\bf Software Tools \& Architectures}\vspace{0.2em}
+
+\begin{itemize}
+	\setlength{\itemindent}{3em}
+	\item[Expert:] Git, ROS, Linux (Arch, Ubuntu)
+	\item[Skilled:] Orocos, Xenomai, AVR and ARM microprocessors, ChibiOS
+		embedded RTOS
+	\item[Basic:] Subversion, Mercurial, Mac OS, Windows
+\end{itemize}
+
 {\bf Languages}\vspace{0.2em}
 
 \begin{itemize}
-\item C, C++, Python, Common Lisp,
-	  HTML, CSS, Bash, \LaTeX
-\end{itemize}
-
-{\bf Tools \& Architectures}\vspace{0.2em}
-
-\begin{itemize}
-\item ROS, Orocos, Xenomai,
-	  Git, Subversion,
-	  AVR and ARM microprocessors,
-	  Linux (Arch, Ubuntu), Mac OS, Windows
+	\setlength{\itemindent}{3em}
+	\item[Skilled:] C, C++, Python, Bash, \LaTeX
+	\item[Basic:] Common Lisp, Haskell, Java, HTML, CSS, Javascript
 \end{itemize}
 
 {\bf Mechanical \& Electrical}\vspace{0.2em}
 
 \begin{itemize}
-\item SolidWorks, MIG/arc welding, machine tools,
-	  Eagle PCB, hand-soldering 0402's
+	\setlength{\itemindent}{3em}
+	\item[Expert:] Hand-soldering anything from 0402's to 6 AWG wire
+	\item[Skilled:] SolidWorks, MIG/arc welding, machine tools, Eagle PCB
 \end{itemize}
 
 
