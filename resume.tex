@@ -34,56 +34,53 @@
 
 % Center the name over the entire width of resume:
 \moveleft.5\hoffset\centerline{\huge\bf Soo-Hyun Yoo}
+
 % Draw a horizontal line the whole width of resume:
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
-% address begins here
-% Again, the address lines must be centered over entire width of resume:
-\moveleft.5\hoffset\centerline{2201 NW Maser Drive, Corvallis, OR 97330}
 
-% TODO: This is a hack to make my contact info look a bit more organized.
-\vspace{-1.2em}
-\moveleft.5\hoffset\centerline{yoos@onid.oregonstate.edu \hfill iterativecode.com}
-\moveleft.5\hoffset\centerline{740-343-9667 \hfill github.com/yoos}
+% Left column
+\moveleft.5\hoffset\centerline{iterativecode.com \hfill}
+\moveleft.5\hoffset\centerline{github.com/yoos \hfill}
+
+% Center column
+\vspace{-2.4em}
+\moveleft.5\hoffset\centerline{yoos@onid.oregonstate.edu}
+\moveleft.5\hoffset\centerline{740-343-9667}
+
+% Right column
+\vspace{-2.4em}
+\moveleft.5\hoffset\centerline{\hfill 2201 NW Maser Drive}
+\moveleft.5\hoffset\centerline{\hfill Corvallis, OR 97330}
 \vspace{-0.1in}
 
 
 \begin{resume}
 
-
 \section{Education}
 
 {\bf Oregon State University} \hfill {\color{lightgray} Corvallis, OR} \\
-{\it Computer Science (3.26/4.0 GPA, graduation June 2015)} \hfill {\color{lightgray} Sep. 2011 -- Present}\vspace{0.0em}
-
-
-
-% Skills section near top to impress HR people.
-\section{Skills}
-
-{\bf Software}\vspace{0.0em}
-
-\begin{itemize}
-	\item Expert: \hspace{10pt} Git, Linux (Arch, Ubuntu)
-	\item Proficient: C, C++, Python, Bash, Robot Operating System, Open Robot Control System
-	\item Basic: \hspace{17pt} OpenCV, ZeroMQ, JavaScript, DelphiScript
-\end{itemize}
-
-{\bf Electrical}\vspace{0.0em}
-
-\begin{itemize}
-	\item Proficient: High-speed digital logic design, Altium
-\end{itemize}
+{\it Computer Science (3.26/4.0 GPA, graduation June 2015)} \hfill {\color{lightgray} Sep 2011 -- Present}\vspace{0.0em}
 
 
 \section{Work \\ Experience}
 
+{\bf OSU Robotic Decision Making Laboratory} \hfill {\color{lightgray} Corvallis, OR} \\
+{\it Research Assistant} \hfill {\color{lightgray} Jun 2014 -- Present}\vspace{0.0em}
+
+\begin{itemize}
+	\item Work in team of four to implement an adaptive receding horizon
+		explorer for an autonomous surface vehicle. Help test quadrotors for
+		cooperative multiagent indoor exploration.
+\end{itemize}
+
+
 {\bf SpaceX} \hfill {\color{lightgray} Hawthorne, CA} \\
-{\it Avionics Intern -- RIO Team} \hfill {\color{lightgray} Oct. 2013 -- Mar. 2014}\vspace{0.0em}
+{\it Avionics Intern -- RIO Team} \hfill {\color{lightgray} Oct 2013 -- Mar 2014}\vspace{0.0em}
 
 \begin{itemize}
 	\item Designed testboards and/or conducted tests to:
 		\begin{itemize}
-			\item Evaluate optoelectronic transceivers for future use
+			\item Evaluate gigabit optoelectronic transceivers for future use
 			\item Test a PCI-Express gigabit Ethernet switch IC for
 				single-event effects in radiation
 			\item Analyze efficiency of several switched-mode power supplies
@@ -100,7 +97,7 @@
 
 
 {\bf OSU Open Source Laboratory} \hfill {\color{lightgray} Corvallis, OR} \\
-{\it Student Developer} \hfill {\color{lightgray} Feb. 2013 -- Oct. 2013}\vspace{0.0em}
+{\it Student Developer} \hfill {\color{lightgray} Feb -- Oct 2013}\vspace{0.0em}
 
 \begin{itemize}
 	\item Developed and integrated ORVSD administrative Python backend into
@@ -110,7 +107,7 @@
 
 
 {\bf OSU Dynamic Robotics Laboratory} \hfill {\color{lightgray} Corvallis, OR} \\
-{\it Programmer} \hfill {\color{lightgray} Sep. 2011 -- Oct. 2013}\vspace{0.0em}
+{\it Programmer} \hfill {\color{lightgray} Sep 2011 -- Oct 2013, Apr -- Jul 2014}\vspace{0.0em}
 
 \begin{itemize}
 	\item Assembled software system in a team of five using ROS and Orocos for
@@ -137,7 +134,7 @@
 %	\item Help repair and assemble robot hardware and electronics.
 \end{itemize}
 
-{\it Programming Intern} \hfill {\color{lightgray} Jun. 2010 -- Aug. 2010}\vspace{0.0em}
+{\it Programming Intern} \hfill {\color{lightgray} Jun 2010 -- Aug 2010}\vspace{0.0em}
 
 \begin{itemize}
 	\item Developed GTK+ GUI for ATRIAS 1.0, a monopod robot. Developed 3D
@@ -150,30 +147,49 @@
 \section{Clubs \& \\ Activities}
 
 {\bf OSU Robotics Club Autonomous Aerial Team} \hfill {\color{lightgray} Corvallis, OR} \\
-{\it Team Lead, Programmer} \hfill {\color{lightgray} Sep. 2011 -- Oct. 2013}\vspace{0.0em}
+{\it Team Lead, Programmer} \hfill {\color{lightgray} Sep 2011 -- Oct 2013}\vspace{0.0em}
 
 \begin{itemize}
 	\item Developed embedded flight firmware using direction cosine matrices
 		for kinematic control. Developed software for basic object recognition
 		and implemented third-party 3D SLAM and navigation software.  Organized
-		budgets and schedule. Team Lead Sep. 2012 -- Oct. 2013.
+		budgets and schedule. Team Lead Sep 2012 -- Oct 2013.
 \end{itemize}
 
 
 
-\section{Personal \\ Projects}
+%\section{Personal \\ Projects}
+%
+%{\bf Tricopter} \hfill {\color{lightgray} Jan 2011 -- Aug 2012}\vspace{0.0em}
+%
+%\begin{itemize}
+%	\item Multirotor with garage-built hardware and software. Served as
+%		introduction to AVR microcontrollers, power electronics, cascading PID
+%		control, ROS, and SolidWorks.
+%\end{itemize}
 
-{\bf Tricopter} \hfill {\color{lightgray} Jan. 2011 -- Aug. 2012}\vspace{0.0em}
+
+% Consider removing this.
+\section{Skills}
+
+{\bf Software}\vspace{0.0em}
 
 \begin{itemize}
-	\item Multirotor with garage-built hardware and software. Served as
-		introduction to AVR microcontrollers, power electronics, cascading PID
-		control, ROS, and SolidWorks.
+	\item Expert: \hspace{10pt} Git, Linux (Arch, Ubuntu)
+	\item Proficient: C, C++, Python, Bash, Robot Operating System, Open Robot Control System
+	\item Basic: \hspace{17pt} OpenCV, ZeroMQ, JavaScript, DelphiScript
 \end{itemize}
 
-{\footnotesize (More personal projects on my website, iterativecode.com, and
-Github page. References available upon request.)}
+{\bf Electrical}\vspace{0.0em}
 
+\begin{itemize}
+	\item Proficient: High-speed digital logic design, Altium
+\end{itemize}
+
+
+\vspace{0.5em}
+{\footnotesize (Personal projects on my website, iterativecode.com, and Github
+page. References available upon request.)}
 
 % \section{References}
 % 
