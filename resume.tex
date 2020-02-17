@@ -28,13 +28,13 @@
 \definecolor{lightgray}{gray}{0.5}
 
 \newcommand{\org}[2]{{\bf #1} \hfill {\color{lightgray} #2} \\}
-\newcommand{\pos}[2]{{\it #1} \hfill {\color{lightgray} #2} \vspace{0.0em}}
+\newcommand{\pos}[2]{\small {\it #1} \hfill {\color{lightgray} #2} \vspace{0.0em}}
 
 
 \begin{document}
 
 % Center the name over the entire width of resume:
-\moveleft.5\hoffset\centerline{\huge\bf Soo-Hyun Yoo}
+\moveleft.5\hoffset\centerline{\huge\bf Soohyun Yoo}
 
 % Draw a horizontal line the whole width of resume:
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
@@ -53,7 +53,7 @@
 \vspace{-2.4em}
 \moveleft.5\hoffset\centerline{\hfill 22909 Fern Ave}
 \moveleft.5\hoffset\centerline{\hfill Torrance, CA 90505}
-\vspace{-0.1in}
+\vspace{-0.2in}
 
 
 \begin{resume}
@@ -69,15 +69,50 @@
 \org {SpaceX} {Hawthorne, CA}
 \pos {Hardware Development Engineer II} {Apr 2018 -- Present}
 
+\begin{itemize}
+  \item Key member of the Lifecycle Engineering Team responsible for
+    development of new tools and sustainable engineering processes. Heavy focus
+    on nurturing effective use of JIRA and Confluence to reduce cost of context
+    switching and facilitate knowledge sharing between teams.
+  \item Shared team responsibilities include production support for all Dragon
+    1 avionics and $>$90\% of Falcon 9 avionics, as well as providing
+    surge support for other vehicle programs. Team of 10.
+\end{itemize}
+
+
 \pos {Hardware Development Engineer} {Dec 2015 -- Apr 2018}
 
+\begin{itemize}
+  \item Completed design and validation of:
+    \begin{itemize}
+      \item Four Xilinx UltraScale+ compute platforms built around a common
+        "core block". Project kickoff to flight hardware validation completed
+        in under one year. Co-designed with one other hardware design engineer,
+        with tight coordination with procurement, manufacturing, software,
+        FPGA, and program management teams.
+      \item A general-purpose network switch, now part of Falcon, Dragon 2,
+        Starship, and satellites
+      \item A Secure GPS receiver, integrating a Selective Availability
+        Anti-Spoofing Module (SAASM) provided by a third-party vendor, along
+        with crypto key load procedures.
+    \end{itemize}
+  \item As a Responsible Engineer, led design reviews and completed multiple
+    qualification campaigns (shock, vibration, thermal, EMC, and radiation
+    testing).
+\end{itemize}
 
-\pos {Avionics Intern -- RIO Team} {Jul 2015 -- Dec 2015}
+
+\pos {Avionics Intern -- RIO Team} {Oct 2013 -- Mar 2014, Jul -- Dec 2015}
 
 \begin{itemize}
-    \item Currently developing software tools to speed up Avionics R\&D.
-    \item Developed improved Ethernet validation software for the Falcon Flight
-      Computer and helped push several boxes through production.
+  \item Developed software tools now used throughout Avionics to test anything
+    with a processor and digital interfaces, with emphasis on performance and
+    reliability.
+  \item Supported confidence qualification of the Dragon 2 Flight Computer, as
+    well as qualification of the Falcon Flight Computer leading up to the
+    Falcon 9's return-to-flight launch and landing in Dec 2015.
+  \item Implemented a PCIe Ethernet switch for radiation testing and evaluated
+    an optoelectronic transceiver.
 \end{itemize}
 
 
@@ -85,41 +120,33 @@
 \pos {Research Assistant} {Jun 2014 -- Jun 2015}
 
 \begin{itemize}
-    \item Implement an adaptive receding horizon explorer for an autonomous
-        surface vehicle. Help test quadrotors for cooperative multiagent indoor
-        exploration. Published to FSR and ICRA.
+  \item Implemented an adaptive receding horizon explorer for an autonomous
+    surface vehicle. Tested quadrotors in cooperative multiagent indoor
+    exploration. Published to FSR and ICRA.
 \end{itemize}
 
 
-\org {SpaceX} {Hawthorne, CA}
-\pos {Avionics Intern -- RIO Team} {Oct 2013 -- Mar 2014}
-
-\begin{itemize}
-    \item Designed testboards and/or conducted tests to:
-        \begin{itemize}
-            \item Evaluate gigabit optoelectronic transceivers for future use
-            \item Test a PCI-Express gigabit Ethernet switch IC for
-                single-event effects in radiation
-            %\item Analyze efficiency of several switched-mode power supplies
-            %\item Measure S-parameters of a commonly used cPCI connector
-        \end{itemize}
-    \item Designed and conducted radiation tests of five devices at IU
-        Cyclotron Facility.
-    \item Designed and built part of a software system for easy setup,
-        monitoring, and control of hardware test racks using ZeroMQ, AngularJS,
-        and CoffeeScript.
-    \item Designed and built a proof-of-concept automated derating tool in
-        Altium using DelphiScript.
-\end{itemize}
+%%% Combined with SpaceX section above.
+%\org {SpaceX} {Hawthorne, CA}
+%\pos {Avionics Intern -- RIO Team} {Oct 2013 -- Mar 2014}
+%
+%\begin{itemize}
+%  \item Implemented a PCIe Ethernet switch for radiation testing and evaluated
+%    an optoelectronic transceiver.
+%  \item Designed and built part of a software system for easy setup,
+%    monitoring, and control of hardware test racks using ZeroMQ, AngularJS,
+%    and CoffeeScript.
+%  \item Designed and built a proof-of-concept automated derating tool in
+%    Altium using DelphiScript.
+%\end{itemize}
 
 
 \org {OSU Open Source Laboratory} {Corvallis, OR}
 \pos {Student Developer} {Feb -- Oct 2013}
 
 \begin{itemize}
-    \item Developed and integrated ORVSD administrative Python backend into
-        existing web framework and frontend UI in Drupal. Made bugfixes in
-        various other projects in a team of 15.
+  \item Developed an administrative Python backend into an existing Drupal web
+    framework and frontend for the Oregon Virtual School District. Team of 15.
 \end{itemize}
 
 
@@ -127,19 +154,19 @@
 \pos {Programmer} {Sep 2011 -- Oct 2013, Apr -- Jul 2014}
 
 \begin{itemize}
-    \item Assembled software system in a team of five using ROS and Orocos for
-        ATRIAS, an EtherCAT-enabled bipedal robot. System runs modular, hard
-        real-time 1 kHz controllers in Xenomai-patched Linux, wirelessly
-        controlled through a GTK+ GUI with onboard and remote logging.
+  \item Assembled software system using ROS and Orocos for ATRIAS, an
+    EtherCAT-enabled bipedal robot. System runs modular, hard real-time 1 kHz
+    controllers in Xenomai-patched Linux, wirelessly controlled through a GTK+
+    GUI with onboard and remote logging. Team of 5.
 \end{itemize}
 
-\pos {Programming Intern} {Jun 2010 -- Aug 2010}
-
-\begin{itemize}
-    \item Developed GTK+ GUI for ATRIAS 1.0, a monopod robot. Developed 3D
-        simulation and visualizer using Blender, Panda3D, and ODE. Software
-        used to test controllers.
-\end{itemize}
+% \pos {Programming Intern} {Jun 2010 -- Aug 2010}
+% 
+% \begin{itemize}
+%     \item Developed GTK+ GUI for ATRIAS 1.0, a monopod robot. Developed 3D
+%         simulation and visualizer using Blender, Panda3D, and ODE. Software
+%         used to test controllers.
+% \end{itemize}
 
 
 
@@ -149,10 +176,10 @@
 \pos {Team Lead, Programmer} {Sep 2011 -- Jun 2015}
 
 \begin{itemize}
-    \item Developed flight control avionics, flight firmware using direction
-      cosines for kinematic control, and worked with basic object recognition
-      and third-party 3D SLAM and navigation software. Organized budgets and
-      schedule. Team Lead Sep 2012 -- Oct 2013, Sep 2014 -- Jun 2015.
+  \item Developed avionics, flight firmware using direction cosines for
+    kinematic control, and worked with basic object recognition and third-party
+    3D SLAM and navigation software. Organized budgets and schedule.
+    % Team Lead Sep 2012 -- Oct 2013, Sep 2014 -- Jun 2015.
 \end{itemize}
 
 
@@ -169,11 +196,12 @@
 
 
 % Consider removing this.
-\section{Skills}
+\section{Skills \& \\ Misc. Exp.}
 
-{\bf Software:} C, C++, Python, Git, Linux (Arch, Ubuntu)
+{\bf Software:} C, C++, Python, Git, Linux (Arch, Ubuntu), JIRA/Confluence
 
-{\bf Electrical:} High-speed digital logic design, Ethernet, Altium
+{\bf Electrical:} High-speed digital design (Ethernet, SGMII, PCIe),
+intermediate power supply design, basic RF \& mixed signals, Altium
 
 
 % \section{References}
